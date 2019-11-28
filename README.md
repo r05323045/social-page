@@ -1,4 +1,4 @@
-#Social Page
+# Social Page
 
 <p>A practice of using bootstrap and javascript to build a web platform which can help user to connect with people around the world. </p>
 
@@ -6,7 +6,7 @@
 
 ![filter](images/filter-look.gif)
 
-##Feature
+## Feature
 - Favorite List
    - add or remove someone to the list
 - Filter
