@@ -20,7 +20,7 @@
     let totalPages
     let paginationData = []
     let modeStatus = 'card-mode'
-
+    
     if (alldata.length === 0) {
       axios.get(INDEX_URL)
       .then(function (response){
