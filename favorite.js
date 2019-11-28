@@ -81,7 +81,7 @@
               <div class="card-body d-flex flex-column align-items-center">
                 <span class="card-id d-none">${data.id}</span>
                 <h5 class="card-title">${data.name} ${data.surname}</h5>
-                <p class="card-text"><img class='mr-2 mb-1 flag' src="">${data.region}</p>
+                <p class="card-text"><img class='mr-2 mb-1 flag' src="${data.flag}">${data.region}</p>
                 <span class="age"><i class="fas fa-${data.gender} mr-2"></i>${data.age}歲</span>
               </div>`
         parent.appendChild(userCard)
