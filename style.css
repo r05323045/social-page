@@ -115,6 +115,7 @@ input[type=range]::-webkit-slider-thumb {
     border: 3px solid #61acf5;
 }
 .heart-of-card {
+    cursor: pointer;
     position: absolute;
     left:85%;
     color: #f56162;
@@ -123,6 +124,7 @@ input[type=range]::-webkit-slider-thumb {
     filter: brightness(70%);
   }
 .heart-of-list {
+    cursor: pointer;
     position: absolute;
     left: 40%;
     top:40%;
