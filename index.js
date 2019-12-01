@@ -1,5 +1,5 @@
-import { getPageData, getAllPagination, showUser} from 'module/pageDisplay.js'
-import { filterResults, filterButton, filterEvent, filterProcess} from 'module/filter.js'
+import { getPageData, getAllPagination, showUser} from './module/pageDisplay.js'
+import { filterResults, filterButton, filterEvent, filterProcess} from './module/filter.js'
 
 (function () {
     const BASE_URL = 'https://lighthouse-user-api.herokuapp.com/'
