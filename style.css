@@ -114,11 +114,22 @@ input[type=range]::-webkit-slider-thumb {
 .male{
     border: 3px solid #61acf5;
 }
-.fa-heart {
+.heart-of-card {
+    position: absolute;
+    left:85%;
     color: #f56162;
 }
-.fa-heart:hover::before {
+.heart-of-card:hover::before {
     filter: brightness(70%);
+  }
+.heart-of-list {
+    position: absolute;
+    left: 40%;
+    top:40%;
+    color: #f56162;
+}
+.heart-of-list:hover::before {
+      filter: brightness(70%);
 }
 .fa-male {
     color: #61acf5;
