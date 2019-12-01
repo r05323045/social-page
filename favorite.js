@@ -1,4 +1,4 @@
-import {getAllPagination, showUser, paginationUpdate, displayDataList} from '/module/pageDisplay.js'
+import {getAllPagination, showUser, paginationUpdate, displayDataList} from './module/pageDisplay.js'
 
 (function () {
 
