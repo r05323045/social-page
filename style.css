@@ -161,6 +161,10 @@ input[type=range]::-webkit-slider-thumb {
       height: 15px;
 }
 
+.card-title {
+  font-size: medium;
+}
+
 /*user list*/
 .list-img {
   width: 100px;
@@ -181,7 +185,28 @@ input[type=range]::-webkit-slider-thumb {
   padding: 2em;
   max-width: 250px;
 }
+
+.region-card,
+.region-card-footer {
+  width: 400px;
+}
+.region-card-footer .save-filter {
+  margin-left: 140px;
+}
+@media screen and (min-width: 576px) {
+  .region-card,
+  .region-card-footer {
+    width: 500px;
+  }
+  .region-card-footer .save-filter {
+    margin-left: 230px;
+  }
+}
+
 @media screen and (min-width: 765px) {
+  .card-title {
+    font-size: large;
+  }
   #show-user-image {
     padding: 1em;
   }

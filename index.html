@@ -23,7 +23,7 @@
             <a style="color: white" class="nav-link btn-secondary" href="favorite.html#favorite-title">My favorites<span class="badge badge-light ml-3 num-of-favorite">0</a>
           </ul>
           <!--search-->
-          <form id="search" class="input-group col-4 col-lg-3 col-xl-2 d-none d-md-flex" style="border-radius: 20px; background: white;">
+          <form id="search" class="input-group col-5 col-sm-4 col-lg-3 col-xl-2 d-flex my-3 my-md-0" style="border-radius: 20px; background: white;">
             <div class="input-group-btn search-panel d-flex">
               <button type="button" class="btn btn-sm dropdown-toggle my-auto" data-toggle="dropdown">
                   <span id="search-type">name</span>
@@ -39,7 +39,7 @@
             </span>
           </form>
 
-          <div class="btn-group ml-3">
+          <div class="btn-group ml-3 d-none d-md-block">
             <button type="button" class="btn btn-secondary"><span id="sign-up-name" class="mr-3">GUEST</span><i class="fas fa-user"></i></button>
             <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span class="sr-only">Toggle Dropdown</span>
@@ -70,7 +70,7 @@
               <div class="carousel-caption text-left">
                 <h1>Explore the world.</h1>
                 <p>Tips for user : You can remove the person from your favorites by clicking the heart icon. Tips for user : You can remove the person from your favorites by clicking the heart icon.</p>
-                <p><a class="btn btn-lg btn-primary" data-toggle="modal" data-target="#modalRegisterForm" role="button">Sign up today</a></p>
+                <p><a class="btn btn-lg btn-primary" style="cursor: pointer;" data-toggle="modal" data-target="#modalRegisterForm" role="button">Sign up today</a></p>
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@
               <div class="carousel-caption">
                 <h1>Make your life a better place.</h1>
                 <p>Tips for user : You can remove the person from your favorites by clicking the heart icon. Tips for user : You can remove the person from your favorites by clicking the heart icon.</p>
-                <p><a class="btn btn-lg btn-primary" data-toggle="modal" data-target="#modalRegisterForm" role="button">Sign up now</a></p>
+                <p><a class="btn btn-lg btn-primary" style="cursor: pointer;" data-toggle="modal" data-target="#modalRegisterForm" role="button">Sign up now</a></p>
               </div>
             </div>
           </div>
@@ -90,7 +90,7 @@
               <div class="carousel-caption text-right">
                 <h1>Build deeper connection with people.</h1>
                 <p>Tips for user : You can remove the person from your favorites by clicking the heart icon. Tips for user : You can remove the person from your favorites by clicking the heart icon.</p>
-                <p><a class="btn btn-lg btn-primary" data-toggle="modal" data-target="#modalRegisterForm" role="button">Sign up today</a></p>
+                <p><a class="btn btn-lg btn-primary" style="cursor: pointer;" data-toggle="modal" data-target="#modalRegisterForm" role="button">Sign up today</a></p>
               </div>
             </div>
           </div>
@@ -121,7 +121,7 @@
       <div id="filter" class="mt-3 row d-none">
         <div class="offset-2"><h1>filter</h1></div>
         <div class="ml-5 mt-3 my-sm-auto ml-sm-3">
-          <button id="collapse-gender" type="button" class="btn filter-btn ml-5" data-toggle="collapse" data-target="#collapseGender">gender</button>
+          <button id="collapse-gender" type="button" class="btn filter-btn ml-sm-5" data-toggle="collapse" data-target="#collapseGender">gender</button>
           <button id="collapse-region"type="button" class="btn filter-btn" data-toggle="collapse" data-target="#collapseRegion">region</button>
           <button id="collapse-age"type="button" class="btn filter-btn" data-toggle="collapse" data-target="#collapseAge">age</button>
         </div>
@@ -143,18 +143,19 @@
       </div>
   
       <div class="collapse filter-collapse" id="collapseRegion">
-          <div class="card mx-auto" style="border-radius: 20px; width: 500px; margin: 30px 10px 0 100px; background:rgba(0,0,0,0)">
+          <div class="card mx-auto region-card" style="border-radius: 20px; margin: 30px 10px 0 100px; background:rgba(0,0,0,0)">
               <div class="card card-body" style="border: none; background:rgba(0,0,0,0)">
                   <div class="mx-auto row d-flex">
                       <button id="Europe" type="button" class="filter-btn mx-3 my-3 btn btn-outline-dark">Europe</button>
                       <button id="Americas" type="button" class="filter-btn mx-3 my-3 btn btn-outline-dark">Americas</button>
+                      <div class="w-100 d-sm-none"></div>
                       <button id="Asia" type="button" class="filter-btn mx-3 my-3 btn btn-outline-dark">Asia</button>
                       <button id="Oceania" type="button" class="filter-btn mx-3 my-3 btn btn-outline-dark">Oceania</button>   
                   </div>
               </div>
-              <div class="card-footer" style="margin: 0px 10px 0 0px; width: 500px; background:rgba(0,0,0,0)">
+              <div class="card-footer region-card-footer" style="margin: 0px 10px 0 0px; background:rgba(0,0,0,0)">
                   <button type="button" class="filter-footer-btn ml-3 btn btn-light clear-filter" style="width: 100px; font-size: 14px;" >清除全部</button>
-                  <button type="button" class="filter-footer-btn mr-3 btn btn-dark save-filter" style="width: 80px; margin-left: 230px" data-toggle="collapse" data-target="#collapseRegion">儲存</button>
+                  <button type="button" class="filter-footer-btn mr-3 btn btn-dark save-filter" style="width: 80px;" data-toggle="collapse" data-target="#collapseRegion">儲存</button>
               </div>
           </div>
       </div>
@@ -283,13 +284,13 @@
                         <li class="list-group-item" id="show-user-age">User age</li>
                         <li class="list-group-item" id="show-user-date">User birthday</li>
                         <li class="list-group-item" id="show-user-region">User region</li>
-                        <li class="list-group-item" id="show-user-email">User email</li> 
+                        <li class="list-group-item d-none d-sm-block" id="show-user-email">User email</li> 
                       </ul>
                     </div>
                   </div>
               </div>                                                                         
               <div id="show-user-modal-footer" class="modal-footer">
-                <button type="button" class="filter-footer-btn btn btn-danger add-to-favorite">add to favorite<span class=" badge badge-light ml-2 num-of-favorite">0</span></button>
+                <button type="button" class="filter-footer-btn btn btn-danger add-to-favorite">add to favorite<span class="badge badge-light ml-2 num-of-favorite">0</span></button>
                 <button type="button" class="filter-footer-btn btn btn-secondary" data-dismiss="modal">Close</button>
               </div>
             </div>

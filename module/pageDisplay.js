@@ -24,21 +24,21 @@ function createUserList (data, parent) {
   let userList = document.createElement('div')
   userList.classList.add('user-list', 'list-group-item')
   userList.innerHTML = `
-        <div class="row d-flex">
+        <div class="row d-flex flex-nowrap">
           <div class="col-1">
             <i class="my-auto fas fa-heart heart-of-list d-none"></i>
           </div>
-          <div class="user-img col-2 text-center">
+          <div class="user-img col-4 col-sm-2 text-center">
             <img src="${data.avatar}" data-toggle="modal" data-target="#show-user-modal" data-id="${data.id}" class="list-img btn-show-user rounded-circle mx-auto img-fluid ${data.gender}">
           </div>
           <span class="card-id d-none">${data.id}</span>
           <h5 class="card-title my-auto col-3 text-center">${data.name} ${data.surname}</h5>
           
-          <p class="my-auto card-text col-3 text-center"><img class='mb-1 flag mr-3' src="${data.flag}">${data.region}</p>
-          <div class="my-auto text-center col-1">  
+          <div class="my-auto card-text col-1 col-sm-2 col-md-3 d-flex align-items-center text-center"><img class='mb-1 flag mx-auto mx-md-3' src="${data.flag}"><span class="d-none d-md-block">${data.region}</span></div>
+          <div class="my-auto text-center d-none d-sm-block col-sm-2 col-md-1">  
             <i class="my-auto fas fa-${data.gender}"></i>
           </div>
-          <span class="text-center my-auto age col-2">${data.age}歲</span>
+          <span class="text-center my-auto age col-3 col-sm-2">${data.age}歲</span>
         </div>`
   parent.appendChild(userList)
 }
@@ -122,9 +122,11 @@ export function paginationUpdate (selectPage, data) {
   for (let page=1 ; page<=totalPages ; page++) {
       pagination.querySelectorAll(`[data-page='${page}']`).forEach( item => {item.parentElement.classList.add('d-none')})
   }
-  //在分頁區塊只顯示10個分頁
-  const numPaginationShow = 10
-
+  let numPaginationShow = 10  //在分頁區塊只顯示10個分頁
+  if (window.matchMedia( "(min-width: 576px)" ).matches) {
+  } else {
+    numPaginationShow = 5
+  }
   if (selectPage < Math.ceil(numPaginationShow/2) + 1) {
       for (let page=1 ; page<=numPaginationShow ; page++) {
       pagination.querySelectorAll(`[data-page='${page}']`).forEach( item => {item.parentElement.classList.remove('d-none')})
