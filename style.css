@@ -24,7 +24,7 @@ input::placeholder {
 /*filter*/
 
 .filter-btn {
-  margin: 0 20px;
+  margin: 0 10px;
   font-size: 14px;
   color: black;
   letter-spacing: 1px;
@@ -195,6 +195,7 @@ input[type=range]::-webkit-slider-thumb {
 .region-card-footer .save-filter {
   margin-left: 140px;
 }
+
 @media screen and (min-width: 576px) {
   .region-card,
   .region-card-footer {
@@ -202,6 +203,9 @@ input[type=range]::-webkit-slider-thumb {
   }
   .region-card-footer .save-filter {
     margin-left: 230px;
+  }
+  .filter-btn {
+    margin: 0 20px;
   }
 }
 

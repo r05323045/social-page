@@ -25,7 +25,7 @@ function createUserList (data, parent) {
   userList.classList.add('user-list', 'list-group-item')
   userList.innerHTML = `
         <div class="row d-flex flex-nowrap">
-          <div class="col-1">
+          <div class="col-sm-1">
             <i class="my-auto fas fa-heart heart-of-list d-none"></i>
           </div>
           <div class="user-img col-4 col-sm-2 text-center">
