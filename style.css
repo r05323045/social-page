@@ -102,6 +102,10 @@ input[type=range]::-webkit-slider-thumb {
 #sign-up-content {
     max-width: 800px;
     width: 100%;
+    border-radius: 20px;
+}
+#sign-up-content input {
+  border-radius: 20px;
 }
 
 /*user card*/
@@ -194,6 +198,12 @@ input[type=range]::-webkit-slider-thumb {
 }
 .region-card-footer .save-filter {
   margin-left: 140px;
+}
+
+#pagination {
+  margin: 0 auto;
+  width: 90%;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 576px) {
